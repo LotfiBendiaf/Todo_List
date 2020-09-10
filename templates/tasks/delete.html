@@ -1,0 +1,20 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "styles/style.css" %}">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<div class="main-title">
+	<h1>Are you sure you want to delete "{{item}}"?</h1>
+</div>>
+
+<div id="update-wrapper" class="center-column">
+
+	<div class="delete-wrapper">
+		<div><a href="{% url 'list' %}" class="btn btn-info" style="background-color: brown;">Cancel</a></div>
+		<form method="POST" action="">
+			{% csrf_token %}
+			<input class="btn btn-info" type="submit" name="Confirm" value="Confirm">
+		</form>
+	</div>
+</div>

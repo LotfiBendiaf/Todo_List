@@ -1,0 +1,106 @@
+:root{
+	--mainColor:#e8e8e8;
+	--secondaryColor:#fff;
+
+	--mainText:#474857;
+	--secondaryText:#4b5156;
+
+	--borderColor:#bdb5b5;
+	--linkColor:#63c3db;
+	--shadowColor:#f2e5d9;
+
+	--defaultFont:'Montserrat', sans-serif;
+	--mainTitleFont:'Courier Prime', monospace;
+	--secondaryFont:'Baloo 2', cursive;
+
+	--themeDotBorder: #24292e ;
+	--previewBg: rgb(212, 212, 212, 0.6);
+
+	--buttonColor: black;
+}
+
+h1, h2, h3, h4, h6 strong{
+	color: var(--mainColor);
+	font-family: var(--secondaryFont);
+}
+
+body{
+    background-image: url("/static/images/bg7.jpg");
+    background-size: cover;
+}
+
+.main-title{
+    text-align: center;
+    color: var(--mainColor);
+    margin-top: 50px;
+}
+
+input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+  color: #d3d3d3;
+}
+
+#add-task{
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+.center-column{
+    width:600px;
+    margin: 20px auto;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+    box-shadow: 6px 2px 30px 0px rgba(255, 255, 255, 0.288);
+}
+
+.item-row{
+    background-color: #7c65ff6c;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0px -1px 10px -4px rgba(0,0,0,0.75);
+}
+
+#btn-delete{
+    background-color: #ff8e8e;
+    border-color: #e59400;
+    border-radius: 5px;
+}
+
+#btn-delete:hover{
+    background-color: #ff4343;
+}
+
+#check-complete{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+#update-wrapper{
+    background-color: rgba(255, 255, 255, 0.507);
+    padding: 20px;
+}
+
+.delete-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+}

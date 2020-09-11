@@ -1,4 +1,4 @@
-from models import Task
+from .models import Task
 
 from django.contrib import admin
 
